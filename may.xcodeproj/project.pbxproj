@@ -12,6 +12,9 @@
 		6E2AB0561CF6AB11006F303D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2AB0541CF6AB11006F303D /* Main.storyboard */; };
 		6E2AB0581CF6AB11006F303D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E2AB0571CF6AB11006F303D /* Assets.xcassets */; };
 		6E2AB05B1CF6AB11006F303D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2AB0591CF6AB11006F303D /* LaunchScreen.storyboard */; };
+		6E2AB0631CF6C354006F303D /* images-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E2AB0621CF6C354006F303D /* images-1.png */; };
+		6E2AB0661CF6C62B006F303D /* IMG_3021.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6E2AB0651CF6C62B006F303D /* IMG_3021.JPG */; };
+		6E2AB0681CF6C6D0006F303D /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6E2AB0671CF6C6D0006F303D /* images.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		6E2AB0571CF6AB11006F303D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E2AB05A1CF6AB11006F303D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E2AB05C1CF6AB11006F303D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E2AB0621CF6C354006F303D /* images-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-1.png"; sourceTree = "<group>"; };
+		6E2AB0651CF6C62B006F303D /* IMG_3021.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3021.JPG; sourceTree = "<group>"; };
+		6E2AB0671CF6C6D0006F303D /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../images.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +62,23 @@
 			children = (
 				6E2AB0501CF6AB11006F303D /* AppDelegate.swift */,
 				6E2AB0521CF6AB11006F303D /* ViewController.swift */,
+				6E2AB0641CF6C559006F303D /* pic */,
+				6E2AB0621CF6C354006F303D /* images-1.png */,
 				6E2AB0541CF6AB11006F303D /* Main.storyboard */,
 				6E2AB0571CF6AB11006F303D /* Assets.xcassets */,
 				6E2AB0591CF6AB11006F303D /* LaunchScreen.storyboard */,
 				6E2AB05C1CF6AB11006F303D /* Info.plist */,
 			);
 			path = may;
+			sourceTree = "<group>";
+		};
+		6E2AB0641CF6C559006F303D /* pic */ = {
+			isa = PBXGroup;
+			children = (
+				6E2AB0671CF6C6D0006F303D /* images.jpeg */,
+				6E2AB0651CF6C62B006F303D /* IMG_3021.JPG */,
+			);
+			name = pic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +113,7 @@
 				TargetAttributes = {
 					6E2AB04C1CF6AB11006F303D = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = FKA7WRLU7U;
 					};
 				};
 			};
@@ -124,7 +142,10 @@
 			files = (
 				6E2AB05B1CF6AB11006F303D /* LaunchScreen.storyboard in Resources */,
 				6E2AB0581CF6AB11006F303D /* Assets.xcassets in Resources */,
+				6E2AB0661CF6C62B006F303D /* IMG_3021.JPG in Resources */,
 				6E2AB0561CF6AB11006F303D /* Main.storyboard in Resources */,
+				6E2AB0631CF6C354006F303D /* images-1.png in Resources */,
+				6E2AB0681CF6C6D0006F303D /* images.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = may/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.techmaster.may;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = may/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.techmaster.may;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
